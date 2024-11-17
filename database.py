@@ -5,7 +5,7 @@ from tkinter import messagebox
 def connect_database():
     global mycursor,conn
     try:
-        conn = pymysql.connect(user='root',password='ram@M2002',host='localhost',port=3307,database='employee_data')
+        conn = pymysql.connect(user='root',password='use your password',host='localhost',port=3307,database='employee_data')
         mycursor = conn.cursor()
     except:
         messagebox.showerror('Error','Something went wrong,Please open mysql app before running again')
